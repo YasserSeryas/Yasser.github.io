@@ -6,9 +6,15 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    background: url('../images/heroImage.jpeg');
+    background: url('../images/dark.png');
     background-size:cover;
     position:relative;
+}
+.moi {
+    height: 100%;
+    background-size:cover;
+    float: right;
+
 }
 /* text css above hero image*/
 .hero_title {
