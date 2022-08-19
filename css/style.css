@@ -14,7 +14,10 @@
     height:100vh;
     background: url('../images/dark.png');
     background-size:cover;
-    position:relative;
+    background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center center;
+ background-size: cover;
 }
 .moi {
     height: 100%;
