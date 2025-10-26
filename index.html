@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <title>Portfolio Website-Brad</title>
+  <title>Yasser Youssouf Mohamed - Développeur Web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Yasser Youssouf Mohamed, développeur web spécialisé en React, JavaScript et Node.js">
   <!-- linking css file -->
   <link rel="stylesheet" href="./css/style.css">
   <!-- bootstrap CDN -->
@@ -24,32 +25,37 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">À propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#skills">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Projets</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                
             </div>
         </div>
     </nav>
+    
     <!-- main banner -->
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title">Salut, c'est Yasser</h2>
-                <p class="hero_desc">Je suis en bachelor 3 à Ynov Nantes Campus</p>
+                <h1 class="hero_title">Yasser Youssouf Mohamed</h1>
+                <p class="hero_desc">Développeur Web Full-Stack</p>
+                <p class="hero_sub">React • Node.js • JavaScript • En recherche de CDI</p>
+                <div class="hero-buttons mt-4">
+                    <a href="#portfolio" class="btn btn-primary btn-lg me-3">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">Me contacter</a>
+                </div>
             </div>
             </div>
         </div>
@@ -58,78 +64,86 @@
     <!-- about section-->
     <section id="about">
         <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
+            <h1 class="text-center">À propos de moi</h1>
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+                    <img src="images/about.jpeg" class="imageAboutPage" alt="Photo de Yasser">
                 </div>
 
                 <div class="col-lg-8">
-                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-                        
+                    <p class="lead"> 
+                        Développeur web passionné, actuellement en alternance et à la recherche d'un CDI. 
+                        Spécialisé dans le développement frontend avec React et backend avec Node.js, 
+                        j'aime créer des applications web modernes et performantes.
                     </p>
                     <div class="row mt-3">
                         <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-user text-primary"></i> <strong>Nom:</strong> Yasser Youssouf Mohamed</li>
+                                <li><i class="fas fa-map-marker-alt text-primary"></i> <strong>Localisation:</strong> Cergy, Île-de-France</li>
+                                <li><i class="fas fa-briefcase text-primary"></i> <strong>Statut:</strong> Développeur en alternance</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-code text-primary"></i> <strong>Spécialité:</strong> React/JavaScript</li>
+                                <li><i class="fas fa-graduation-cap text-primary"></i> <strong>Formation:</strong> Ynov Nantes</li>
+                                <li><i class="fas fa-search text-primary"></i> <strong>Recherche:</strong> CDI Développeur Web</li>
                             </ul>
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        <p> 
+                            Mon parcours m'a amené à maîtriser les technologies modernes du web, particulièrement 
+                            l'écosystème React et Node.js. J'ai développé plusieurs projets allant des sites vitrine 
+                            aux applications web complexes avec authentification et bases de données. 
+                            Je suis actuellement à la recherche d'une opportunité en CDI pour continuer à développer 
+                            mes compétences dans une équipe dynamique.
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <!-- services section-->
-    <section id="services">
+    <!-- skills section-->
+    <section id="skills">
         <div class="container">
-            <h1 class="text-center">Services</h1>
+            <h1 class="text-center mb-5">Mes Compétences</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card skillsText">
                         <div class="card-body">
-                            <i class="fas servicesIcon fa-clock"></i>
-                            <h4 class="card-title mt-3">Website Development</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <i class="fab skillsIcon fa-react"></i>
+                            <h4 class="card-title mt-3">Frontend React</h4>
+                            <p class="card-text mt-3">
+                                Développement d'interfaces utilisateur modernes avec React, JSX, hooks et gestion d'état. 
+                                Maîtrise des composants, du routing et de l'intégration d'APIs.
                             </p>
                         </div>
                     </div>  
                 </div>
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card skillsText">
                         <div class="card-body">
-                            <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <i class='fab skillsIcon fa-node-js'></i>
+                            <h4 class="card-title mt-3">Backend Node.js</h4>
+                            <p class="card-text mt-3">
+                                Création d'APIs REST avec Express, authentification, bases de données MongoDB/PostgreSQL. 
+                                Architecture microservices et intégration de systèmes de paiement.
                             </p>
                         </div>
                     </div>  
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card skillsText">
                         <div class="card-body">
-                            <i class='far servicesIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <i class='fab skillsIcon fa-js-square'></i>
+                            <h4 class="card-title mt-3">JavaScript/TypeScript</h4>
+                            <p class="card-text mt-3">
+                                Maîtrise avancée de JavaScript ES6+, TypeScript pour des applications robustes, 
+                                programmation asynchrone et manipulation du DOM.
                             </p>
                         </div>
                     </div>  
@@ -138,36 +152,39 @@
 
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card skillsText">
                         <div class="card-body">
-                            <i class='fas servicesIcon fa-search'></i>
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <i class='fas skillsIcon fa-database'></i>
+                            <h4 class="card-title mt-3">Bases de données</h4>
+                            <p class="card-text mt-3">
+                                Conception et gestion de bases de données relationnelles (MySQL, PostgreSQL) 
+                                et NoSQL (MongoDB). Optimisation des requêtes et modélisation des données.
                             </p>
                         </div>
                     </div>  
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card skillsText">
                         <div class="card-body">
-                            <i class='fas servicesIcon fa-shield-alt'></i>
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <i class='fab skillsIcon fa-docker'></i>
+                            <h4 class="card-title mt-3">DevOps & Déploiement</h4>
+                            <p class="card-text mt-3">
+                                Containerisation avec Docker, déploiement sur Vercel/Netlify, 
+                                CI/CD avec GitHub Actions et gestion des environnements de développement.
                             </p>
                         </div>
                     </div>  
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
+                    <div class="card skillsText">
                         <div class="card-body">
-                            <i class='fas servicesIcon fa-wrench'></i>
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <i class='fab skillsIcon fa-git-alt'></i>
+                            <h4 class="card-title mt-3">Outils & Méthodes</h4>
+                            <p class="card-text mt-3">
+                                Maîtrise de Git/GitHub, VS Code, méthodes agiles, 
+                                tests unitaires avec Jest, et collaboration en équipe sur des projets complexes.
                             </p>
                         </div>
                     </div>  
@@ -179,16 +196,16 @@
     <!-- portfolio section-->
     <section id="portfolio">
         <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
+            <h1 class="text-center mb-5">Mes Projets</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/project-strapi.jpg" alt="Projet Strapi" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">YouTube Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">CMS Strapi</h4>
+                            <p class="card-text">Développement d'un CMS headless avec Strapi pour la gestion de contenu dynamique et APIs REST.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/YasserSeryas/Strapi" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -196,12 +213,12 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/project-formation.jpg" alt="Formation YouTube" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Quiz App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">Plateforme de Formation</h4>
+                            <p class="card-text">Application web de formation avec vidéos YouTube intégrées, gestion d'utilisateurs et suivi de progression.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/YasserSeryas/FormationYoutube" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -209,12 +226,12 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/project-devcloud.jpg" alt="DevCloud" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">DevCloud Platform</h4>
+                            <p class="card-text">Plateforme cloud pour développeurs avec outils de collaboration et déploiement automatisé.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/YasserSeryas/DevCloud" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -224,12 +241,12 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/project-api.jpg" alt="API Development" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Messaging Service</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">API REST Node.js</h4>
+                            <p class="card-text">API complète avec authentification JWT, gestion d'utilisateurs et intégration base de données.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/YasserSeryas/Dev-api" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -237,12 +254,12 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/project-b3.jpg" alt="Projet B3" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Twitter Clone</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">Projet B3 Full-Stack</h4>
+                            <p class="card-text">Application web complète développée en équipe avec architecture moderne et fonctionnalités avancées.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/YasserSeryas/Projet-B3" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -250,65 +267,103 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/project-discord.jpg" alt="Discord Bot" style="width:100%">
                         <div class="card-body">
-                            <h4 class="card-title">Blog App</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h4 class="card-title">Bot Discord Python</h4>
+                            <p class="card-text">Bot Discord automatisé avec commandes personnalisées et intégration d'APIs externes.</p>
                             <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                                <a href="https://github.com/YasserSeryas/Discord_bot" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="text-center mt-5">
+                <a href="https://github.com/YasserSeryas" class="btn btn-outline-primary btn-lg" target="_blank">
+                    <i class="fab fa-github"></i> Voir tous mes projets sur GitHub
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- contact section-->
     <section id="contact">
         <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
+            <h1 class="text-center mb-5">Me Contacter</h1>
 
             <div class="row mt-4">
                 <div class="col-lg-6">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
+                    <div class="contact-info">
+                        <h3>Parlons de votre projet</h3>
+                        <p class="lead">Je suis actuellement à la recherche d'une opportunité en CDI comme développeur web. N'hésitez pas à me contacter pour discuter de vos projets ou d'une collaboration.</p>
+                        
+                        <div class="contact-details mt-4">
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                                <span class="ms-3"><strong>Localisation:</strong> Cergy, Île-de-France</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-envelope text-primary"></i>
+                                <span class="ms-3"><strong>Email:</strong> yasseryoussoufm@gmail.com</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fab fa-linkedin text-primary"></i>
+                                <span class="ms-3"><strong>LinkedIn:</strong> Connectons-nous</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fab fa-github text-primary"></i>
+                                <span class="ms-3"><strong>GitHub:</strong> @YasserSeryas</span>
+                            </div>
                         </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
                     <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Votre nom" required>
                         </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="Votre email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Sujet" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Votre message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
                     </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
                 </div>
-
             </div>
         </div>
     </section>
+    
     <!-- footer section-->
     <footer id="footer">
         <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+            <div class="row">
+                <div class="col-12">
+                    <!-- social media icons -->
+                    <div class="social-icons mt-4 mb-4">
+                        <a href="https://github.com/YasserSeryas" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yasser-youssouf-mohamed" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:yasseryoussoufm@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="text-center text-muted">
+                        &copy; 2025 Yasser Youssouf Mohamed - Développeur Web Full-Stack
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
