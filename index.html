@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Yasser Youssouf Mohamed - Développeur Web</title>
+  <title>Yasser Youssouf Mohamed - Développeur Web Full-Stack</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio de Yasser Youssouf Mohamed, développeur web spécialisé en React, JavaScript et Node.js">
-  <!-- linking css file -->
+  <meta name="description" content="Portfolio de Yasser Youssouf Mohamed, développeur web full-stack spécialisé en React, JavaScript, Node.js. Actuellement en recherche de CDI.">
+  <meta name="author" content="Yasser Youssouf Mohamed">
+  <meta name="keywords" content="développeur web, React, JavaScript, Node.js, TypeScript, full-stack, CDI">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yasser Youssouf Mohamed - Développeur Web Full-Stack">
+  <meta property="og:description" content="Développeur web passionné par React et Node.js, en recherche de CDI">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yasserseryas.github.io/Yasser.github.io/">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css">
-  <!-- bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
         <div class="container">
-            <a class="navbar-brand" href="#">Yasser Youssouf Mohamed</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#home">Yasser Youssouf Mohamed</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Accueil</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">À propos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Expérience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Projets</a>
@@ -44,235 +54,476 @@
         </div>
     </nav>
     
-    <!-- main banner -->
+    <!-- Hero Section -->
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h1 class="hero_title">Yasser Youssouf Mohamed</h1>
-                <p class="hero_desc">Développeur Web Full-Stack</p>
-                <p class="hero_sub">React • Node.js • JavaScript • En recherche de CDI</p>
-                <div class="hero-buttons mt-4">
-                    <a href="#portfolio" class="btn btn-primary btn-lg me-3">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg">Me contacter</a>
+                <div class="col-12 hero-text">
+                    <h1 class="hero_title">Yasser Youssouf Mohamed</h1>
+                    <p class="hero_desc">Développeur Web Full-Stack</p>
+                    <p class="hero_sub">JavaScript • React • Node.js • TypeScript • En recherche de CDI</p>
+                    <div class="hero-buttons mt-4">
+                        <a href="#portfolio" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-code"></i> Mes Projets
+                        </a>
+                        <a href="assets/CV-Yasser-Youssouf-Mohamed.pdf" class="btn btn-outline-light btn-lg me-3" download>
+                            <i class="fas fa-download"></i> Télécharger CV
+                        </a>
+                        <a href="#contact" class="btn btn-success btn-lg">
+                            <i class="fas fa-envelope"></i> Me Contacter
+                        </a>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
 
-    <!-- about section-->
+    <!-- About Section -->
     <section id="about">
         <div class="container mt-4 pt-4">
             <h1 class="text-center">À propos de moi</h1>
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <img src="images/about.jpeg" class="imageAboutPage" alt="Photo de Yasser">
+                    <img src="images/about.jpeg" class="imageAboutPage" alt="Photo de Yasser Youssouf Mohamed">
                 </div>
-
                 <div class="col-lg-8">
                     <p class="lead"> 
-                        Développeur web passionné, actuellement en alternance et à la recherche d'un CDI. 
-                        Spécialisé dans le développement frontend avec React et backend avec Node.js, 
-                        j'aime créer des applications web modernes et performantes.
+                        Développeur web full-stack passionné, actuellement en phase de finalisation 
+                        de ma formation et en recherche active d'un <strong>CDI</strong>. 
+                        Spécialisé dans l'écosystème JavaScript moderne avec une expertise 
+                        particulière en React et Node.js.
                     </p>
-                    <div class="row mt-3">
+                    <div class="row mt-4">
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-user text-primary"></i> <strong>Nom:</strong> Yasser Youssouf Mohamed</li>
-                                <li><i class="fas fa-map-marker-alt text-primary"></i> <strong>Localisation:</strong> Cergy, Île-de-France</li>
-                                <li><i class="fas fa-briefcase text-primary"></i> <strong>Statut:</strong> Développeur en alternance</li>
+                                <li><i class="fas fa-user text-primary"></i> <strong>Nom :</strong> Yasser Youssouf Mohamed</li>
+                                <li><i class="fas fa-phone text-primary"></i> <strong>Téléphone :</strong> 07 64 51 27 79</li>
+                                <li><i class="fas fa-envelope text-primary"></i> <strong>Email :</strong> yasseryoussoufm@gmail.com</li>
+                                <li><i class="fas fa-map-marker-alt text-primary"></i> <strong>Localisation :</strong> Île-de-France</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-code text-primary"></i> <strong>Spécialité:</strong> React/JavaScript</li>
-                                <li><i class="fas fa-graduation-cap text-primary"></i> <strong>Formation:</strong> Ynov Nantes</li>
-                                <li><i class="fas fa-search text-primary"></i> <strong>Recherche:</strong> CDI Développeur Web</li>
+                                <li><i class="fas fa-briefcase text-primary"></i> <strong>Statut :</strong> En recherche de CDI</li>
+                                <li><i class="fas fa-language text-primary"></i> <strong>Langues :</strong> Français, Anglais, Chinois (HSK4)</li>
+                                <li><i class="fas fa-code text-primary"></i> <strong>Spécialité :</strong> React / Node.js</li>
+                                <li><i class="fas fa-graduation-cap text-primary"></i> <strong>Formation :</strong> Ynov Paris/Nantes</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <p> 
-                            Mon parcours m'a amené à maîtriser les technologies modernes du web, particulièrement 
-                            l'écosystème React et Node.js. J'ai développé plusieurs projets allant des sites vitrine 
-                            aux applications web complexes avec authentification et bases de données. 
-                            Je suis actuellement à la recherche d'une opportunité en CDI pour continuer à développer 
-                            mes compétences dans une équipe dynamique.
-                        </p>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <h5><i class="fas fa-star text-warning"></i> Qualités</h5>
+                            <div class="d-flex flex-wrap gap-2 mt-2">
+                                <span class="badge bg-primary fs-6">Autonome</span>
+                                <span class="badge bg-success fs-6">Sens du collectif</span>
+                                <span class="badge bg-info fs-6">Facilité d'adaptation</span>
+                                <span class="badge bg-warning text-dark fs-6">Persévérant</span>
+                            </div>
+                        </div>
                     </div>
+                    <p class="mt-3"> 
+                        Mon parcours m'a amené à maîtriser les technologies modernes du web, 
+                        avec une expérience concrète en alternance chez <strong>Elab Fluxod</strong> 
+                        et plusieurs projets réalisés. Je recherche une opportunité en CDI 
+                        pour mettre en pratique mes compétences et contribuer durablement 
+                        à la croissance d'une entreprise.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section-->
+    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h1 class="text-center mb-5">Mes Compétences</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
+            <h1 class="text-center mb-5">Mes Compétences Techniques</h1>
+            
+            <!-- Frontend -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4"><i class="fas fa-laptop-code text-primary"></i> Frontend</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fab skillsIcon fa-js-square"></i>
+                            <h5 class="card-title mt-3">JavaScript ES6+</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-warning" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
                             <i class="fab skillsIcon fa-react"></i>
-                            <h4 class="card-title mt-3">Frontend React</h4>
-                            <p class="card-text mt-3">
-                                Développement d'interfaces utilisateur modernes avec React, JSX, hooks et gestion d'état. 
-                                Maîtrise des composants, du routing et de l'intégration d'APIs.
-                            </p>
+                            <h5 class="card-title mt-3">React / React Native</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-info" style="width: 85%"></div>
+                            </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <i class='fab skillsIcon fa-node-js'></i>
-                            <h4 class="card-title mt-3">Backend Node.js</h4>
-                            <p class="card-text mt-3">
-                                Création d'APIs REST avec Express, authentification, bases de données MongoDB/PostgreSQL. 
-                                Architecture microservices et intégration de systèmes de paiement.
-                            </p>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fab skillsIcon fa-js-square"></i>
+                            <h5 class="card-title mt-3">TypeScript</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-primary" style="width: 80%"></div>
+                            </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <i class='fab skillsIcon fa-js-square'></i>
-                            <h4 class="card-title mt-3">JavaScript/TypeScript</h4>
-                            <p class="card-text mt-3">
-                                Maîtrise avancée de JavaScript ES6+, TypeScript pour des applications robustes, 
-                                programmation asynchrone et manipulation du DOM.
-                            </p>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fab skillsIcon fa-html5"></i>
+                            <h5 class="card-title mt-3">HTML5 / CSS3</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" style="width: 85%"></div>
+                            </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
-
+            
+            <!-- Backend -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4"><i class="fas fa-server text-success"></i> Backend & DevOps</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fab skillsIcon fa-node-js"></i>
+                            <h5 class="card-title mt-3">Node.js / Express</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fab skillsIcon fa-docker"></i>
+                            <h5 class="card-title mt-3">Docker / Jenkins</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-primary" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fas skillsIcon fa-database"></i>
+                            <h5 class="card-title mt-3">PHP / MySQL</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-info" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fas skillsIcon fa-cog"></i>
+                            <h5 class="card-title mt-3">Nginx / Déploiement</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-secondary" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Autres langages -->
             <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <i class='fas skillsIcon fa-database'></i>
-                            <h4 class="card-title mt-3">Bases de données</h4>
-                            <p class="card-text mt-3">
-                                Conception et gestion de bases de données relationnelles (MySQL, PostgreSQL) 
-                                et NoSQL (MongoDB). Optimisation des requêtes et modélisation des données.
-                            </p>
-                        </div>
-                    </div>  
+                <div class="col-12">
+                    <h3 class="text-center mb-4"><i class="fas fa-code text-warning"></i> Autres Langages</h3>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <i class='fab skillsIcon fa-docker'></i>
-                            <h4 class="card-title mt-3">DevOps & Déploiement</h4>
-                            <p class="card-text mt-3">
-                                Containerisation avec Docker, déploiement sur Vercel/Netlify, 
-                                CI/CD avec GitHub Actions et gestion des environnements de développement.
-                            </p>
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fab skillsIcon fa-java"></i>
+                            <h6 class="card-title mt-2">Java</h6>
                         </div>
-                    </div>  
+                    </div>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <i class='fab skillsIcon fa-git-alt'></i>
-                            <h4 class="card-title mt-3">Outils & Méthodes</h4>
-                            <p class="card-text mt-3">
-                                Maîtrise de Git/GitHub, VS Code, méthodes agiles, 
-                                tests unitaires avec Jest, et collaboration en équipe sur des projets complexes.
-                            </p>
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fab skillsIcon fa-python"></i>
+                            <h6 class="card-title mt-2">Python</h6>
                         </div>
-                    </div>  
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fas skillsIcon fa-code"></i>
+                            <h6 class="card-title mt-2">C / C++</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fas skillsIcon fa-hashtag"></i>
+                            <h6 class="card-title mt-2">C#</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fas skillsIcon fa-code-branch"></i>
+                            <h6 class="card-title mt-2">GoLang</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
+                    <div class="card skillsText h-100">
+                        <div class="card-body text-center">
+                            <i class="fab skillsIcon fa-git-alt"></i>
+                            <h6 class="card-title mt-2">Git</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center mb-5">Mes Projets</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/project-strapi.jpg" alt="Projet Strapi" style="width:100%">
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h1 class="text-center mb-5">Expérience Professionnelle</h1>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Alternance Elab Fluxod -->
+                    <div class="card mb-4 experience-card">
                         <div class="card-body">
-                            <h4 class="card-title">CMS Strapi</h4>
-                            <p class="card-text">Développement d'un CMS headless avec Strapi pour la gestion de contenu dynamique et APIs REST.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/YasserSeryas/Strapi" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="experience-date">
+                                        <span class="badge bg-primary fs-6">Déc 2023 - Présent</span>
+                                        <p class="text-muted mt-2 mb-0"><i class="fas fa-map-marker-alt"></i> Île-de-France</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="text-primary">Développeur Front - Alternance</h4>
+                                    <h6 class="text-muted">Elab Fluxod</h6>
+                                    <p class="mt-3">
+                                        Développement d'applications web frontend avec les technologies modernes.
+                                        Travail en équipe sur des projets d'envergure et amélioration continue 
+                                        des compétences techniques.
+                                    </p>
+                                    <div class="skills-used">
+                                        <span class="badge bg-info me-2">React</span>
+                                        <span class="badge bg-warning me-2">JavaScript</span>
+                                        <span class="badge bg-success me-2">Frontend</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/project-formation.jpg" alt="Formation YouTube" style="width:100%">
+                    
+                    <!-- Stage AKA -->
+                    <div class="card mb-4 experience-card">
                         <div class="card-body">
-                            <h4 class="card-title">Plateforme de Formation</h4>
-                            <p class="card-text">Application web de formation avec vidéos YouTube intégrées, gestion d'utilisateurs et suivi de progression.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/YasserSeryas/FormationYoutube" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="experience-date">
+                                        <span class="badge bg-secondary fs-6">2023</span>
+                                        <p class="text-muted mt-2 mb-0"><i class="fas fa-map-marker-alt"></i> Île-de-France</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="text-primary">Stage Développement Web</h4>
+                                    <h6 class="text-muted">AKA Logistique et Transport</h6>
+                                    <p class="mt-3">
+                                        Développement du site internet de présentation de l'entreprise 
+                                        en utilisant WordPress. Création d'un site responsive et optimisé 
+                                        pour l'expérience utilisateur.
+                                    </p>
+                                    <div class="skills-used">
+                                        <span class="badge bg-primary me-2">WordPress</span>
+                                        <span class="badge bg-info me-2">PHP</span>
+                                        <span class="badge bg-success me-2">Web Design</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/project-devcloud.jpg" alt="DevCloud" style="width:100%">
+                    
+                    <!-- Stage Accoord -->
+                    <div class="card mb-4 experience-card">
                         <div class="card-body">
-                            <h4 class="card-title">DevCloud Platform</h4>
-                            <p class="card-text">Plateforme cloud pour développeurs avec outils de collaboration et déploiement automatisé.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/YasserSeryas/DevCloud" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="experience-date">
+                                        <span class="badge bg-secondary fs-6">2022</span>
+                                        <p class="text-muted mt-2 mb-0"><i class="fas fa-map-marker-alt"></i> Nantes</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <h4 class="text-primary">Stage Développement Web</h4>
+                                    <h6 class="text-muted">Accoord Nantes</h6>
+                                    <p class="mt-3">
+                                        Réalisation d'un site interne de calcul de Quotient Familial en JavaScript
+                                        et développement d'un annuaire téléphonique CRUD avec Laravel.
+                                        Première expérience professionnelle enrichissante.
+                                    </p>
+                                    <div class="skills-used">
+                                        <span class="badge bg-warning me-2">JavaScript</span>
+                                        <span class="badge bg-danger me-2">Laravel</span>
+                                        <span class="badge bg-primary me-2">PHP</span>
+                                        <span class="badge bg-info me-2">CRUD</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <br>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center mb-5">Mes Projets Réalisés</h1>
+            
+            <!-- Projets principaux -->
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/project-api.jpg" alt="API Development" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">API REST Node.js</h4>
-                            <p class="card-text">API complète avec authentification JWT, gestion d'utilisateurs et intégration base de données.</p>
+                    <div class="card portfolioContent h-100">
+                        <img class="card-img-top" src="images/project-microservices.jpg" alt="Billetterie Microservices" style="width:100%;height:200px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Billetterie Microservices</h4>
+                            <p class="card-text flex-grow-1">
+                                Architecture microservices complète avec backend Express et frontend React. 
+                                Système de billetterie avec gestion des événements et paiements.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">Express</span>
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-warning me-1">Microservices</span>
+                            </div>
                             <div class="text-center">
-                                <a href="https://github.com/YasserSeryas/Dev-api" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+                                <span class="badge bg-primary">2025 - En cours</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/project-b3.jpg" alt="Projet B3" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Projet B3 Full-Stack</h4>
-                            <p class="card-text">Application web complète développée en équipe avec architecture moderne et fonctionnalités avancées.</p>
+                    <div class="card portfolioContent h-100">
+                        <img class="card-img-top" src="images/project-spotify.jpg" alt="Spotify Clone" style="width:100%;height:200px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Spotify Clone</h4>
+                            <p class="card-text flex-grow-1">
+                                Clone de Spotify avec lecture de musique, playlists et interface utilisateur 
+                                moderne. Backend Express et frontend React.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">Express</span>
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-secondary me-1">API</span>
+                            </div>
                             <div class="text-center">
-                                <a href="https://github.com/YasserSeryas/Projet-B3" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+                                <span class="badge bg-primary">2025</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/project-discord.jpg" alt="Discord Bot" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Bot Discord Python</h4>
-                            <p class="card-text">Bot Discord automatisé avec commandes personnalisées et intégration d'APIs externes.</p>
+                    <div class="card portfolioContent h-100">
+                        <img class="card-img-top" src="images/project-discord.jpg" alt="Discord Clone" style="width:100%;height:200px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Discord Clone</h4>
+                            <p class="card-text flex-grow-1">
+                                Application de chat en temps réel avec Vue.js 3 et backend fourni. 
+                                Système de salons, messages privés et gestion d'utilisateurs.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">Vue.js 3</span>
+                                <span class="badge bg-warning me-1">WebSocket</span>
+                                <span class="badge bg-info me-1">Chat</span>
+                            </div>
                             <div class="text-center">
-                                <a href="https://github.com/YasserSeryas/Discord_bot" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+                                <span class="badge bg-secondary">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent h-100">
+                        <img class="card-img-top" src="images/project-android.jpg" alt="Application Android" style="width:100%;height:200px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">App Android Nantes</h4>
+                            <p class="card-text flex-grow-1">
+                                Application mobile Android utilisant l'API de Nantes Métropole. 
+                                Backend Spring Boot et application native Kotlin.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">Spring Boot</span>
+                                <span class="badge bg-primary me-1">Kotlin</span>
+                                <span class="badge bg-warning me-1">Android</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="badge bg-secondary">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent h-100">
+                        <img class="card-img-top" src="images/project-ecommerce.jpg" alt="E-commerce" style="width:100%;height:200px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">E-commerce 48H</h4>
+                            <p class="card-text flex-grow-1">
+                                Site e-commerce complet développé en 48h lors d'un hackathon. 
+                                Stack Node.js, React et MongoDB avec système de paiement.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">Node.js</span>
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-warning me-1">MongoDB</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="badge bg-secondary">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent h-100">
+                        <img class="card-img-top" src="images/project-todo.jpg" alt="Todo App" style="width:100%;height:200px;object-fit:cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">Todo React/Node</h4>
+                            <p class="card-text flex-grow-1">
+                                Application de gestion de tâches avec React et Node.js. 
+                                CRUD complet, authentification et interface responsive.
+                            </p>
+                            <div class="mb-3">
+                                <span class="badge bg-info me-1">React</span>
+                                <span class="badge bg-success me-1">Node.js</span>
+                                <span class="badge bg-primary me-1">CRUD</span>
+                            </div>
+                            <div class="text-center">
+                                <span class="badge bg-secondary">2022</span>
                             </div>
                         </div>
                     </div>
@@ -287,7 +538,7 @@
         </div>
     </section>
 
-    <!-- contact section-->
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container mt-3 contactContent">
             <h1 class="text-center mb-5">Me Contacter</h1>
@@ -295,60 +546,75 @@
             <div class="row mt-4">
                 <div class="col-lg-6">
                     <div class="contact-info">
-                        <h3>Parlons de votre projet</h3>
-                        <p class="lead">Je suis actuellement à la recherche d'une opportunité en CDI comme développeur web. N'hésitez pas à me contacter pour discuter de vos projets ou d'une collaboration.</p>
+                        <h3><i class="fas fa-handshake text-primary"></i> Discutons de votre projet</h3>
+                        <p class="lead">
+                            Je suis actuellement à la recherche d'une opportunité en <strong>CDI</strong> 
+                            comme développeur web full-stack. N'hésitez pas à me contacter pour 
+                            discuter de vos projets ou d'une collaboration.
+                        </p>
                         
                         <div class="contact-details mt-4">
                             <div class="contact-item mb-3">
                                 <i class="fas fa-map-marker-alt text-primary"></i>
-                                <span class="ms-3"><strong>Localisation:</strong> Cergy, Île-de-France</span>
+                                <span class="ms-3"><strong>Localisation :</strong> Île-de-France</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="fas fa-phone text-primary"></i>
+                                <span class="ms-3"><strong>Téléphone :</strong> 07 64 51 27 79</span>
                             </div>
                             <div class="contact-item mb-3">
                                 <i class="fas fa-envelope text-primary"></i>
-                                <span class="ms-3"><strong>Email:</strong> yasseryoussoufm@gmail.com</span>
+                                <span class="ms-3"><strong>Email :</strong> yasseryoussoufm@gmail.com</span>
                             </div>
                             <div class="contact-item mb-3">
-                                <i class="fab fa-linkedin text-primary"></i>
-                                <span class="ms-3"><strong>LinkedIn:</strong> Connectons-nous</span>
+                                <i class="fas fa-language text-primary"></i>
+                                <span class="ms-3"><strong>Langues :</strong> Français, Anglais, Chinois (HSK4)</span>
                             </div>
-                            <div class="contact-item mb-3">
-                                <i class="fab fa-github text-primary"></i>
-                                <span class="ms-3"><strong>GitHub:</strong> @YasserSeryas</span>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5><i class="fas fa-search text-success"></i> Recherche active</h5>
+                            <div class="alert alert-success" role="alert">
+                                <i class="fas fa-briefcase"></i> 
+                                <strong>Disponible immédiatement</strong> pour un CDI de développeur web full-stack
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
-                    <!-- form fields -->
                     <form class="contact-form">
                         <div class="mb-3">
-                            <input type="text" class="form-control form-control-lg" placeholder="Votre nom" required>
+                            <label for="name" class="form-label">Nom *</label>
+                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Votre nom" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control form-control-lg" placeholder="Votre email" required>
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control form-control-lg" id="email" placeholder="votre.email@exemple.com" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control form-control-lg" placeholder="Sujet" required>
+                            <label for="subject" class="form-label">Sujet *</label>
+                            <input type="text" class="form-control form-control-lg" id="subject" placeholder="Objet de votre message" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Votre message..." required></textarea>
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Décrivez votre projet ou votre offre d'emploi..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg w-100">
                             <i class="fas fa-paper-plane"></i> Envoyer le message
                         </button>
+                        <p class="text-muted mt-2 small">* Champs obligatoires</p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- footer section-->
+    <!-- Footer -->
     <footer id="footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <!-- social media icons -->
                     <div class="social-icons mt-4 mb-4">
                         <a href="https://github.com/YasserSeryas" target="_blank" title="GitHub">
                             <i class="fab fa-github"></i>
@@ -359,18 +625,19 @@
                         <a href="mailto:yasseryoussoufm@gmail.com" title="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
+                        <a href="assets/CV-Yasser-Youssouf-Mohamed.pdf" title="Télécharger CV" download>
+                            <i class="fas fa-download"></i>
+                        </a>
                     </div>
                     <p class="text-center text-muted">
-                        &copy; 2025 Yasser Youssouf Mohamed - Développeur Web Full-Stack
+                        &copy; 2025 Yasser Youssouf Mohamed - Développeur Web Full-Stack<br>
+                        <small>En recherche active de CDI - Disponible immédiatement</small>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
-
 </body>
-
 </html>
