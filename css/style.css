@@ -122,55 +122,147 @@ body {
     pointer-events: none;
 }
 
+/* Hero layout refinement */
+.hero-wrap {
+    min-height: calc(100vh - 80px);
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
 .hero-text {
-    text-align: center;
+    text-align: left;
     color: var(--white);
     z-index: 2;
     position: relative;
+    max-width: 720px;
 }
 
 .hero_title {
     font-size: 4rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 12px;
     text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
     letter-spacing: -2px;
     background: linear-gradient(135deg, #fff 0%, #e3f2fd 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    line-height: 1.1;
 }
 
 .hero_desc {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-    opacity: 0.95;
-}
-
-.hero_sub {
-    font-size: 1.3rem;
-    opacity: 0.9;
-    margin-bottom: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-}
-
-.hero-buttons .btn {
-    padding: 15px 35px;
+    font-size: 1.6rem;
     font-weight: 600;
-    border-radius: 50px;
+    margin-bottom: 14px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgba(255,255,255,0.95);
+}
+
+.hero_pitch {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 18px;
+    max-width: 56ch;
+}
+
+/* Badges technos */
+.hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.badge-tech {
+    background: rgba(255,255,255,0.14);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: .2px;
+    backdrop-filter: blur(6px);
     transition: var(--transition);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.badge-tech:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
+}
+
+/* Carte latérale */
+.hero-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    backdrop-filter: blur(12px);
+    max-width: 420px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.hero-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 3px solid rgba(255,255,255,0.7);
+    display: block;
+    margin: 0 auto 16px;
+    transition: var(--transition);
+}
+
+.hero-avatar:hover {
+    transform: scale(1.05);
+    border-color: var(--white);
+}
+
+.hero-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-meta li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    opacity: 0.95;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.hero-meta li:last-child {
+    border-bottom: none;
+}
+
+.hero-meta i {
+    width: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Hero buttons */
+.hero-buttons .btn {
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: var(--transition);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     border: none;
-    margin: 0 10px 10px 0;
-    font-size: 1.1rem;
+    margin: 0 8px 10px 0;
+    font-size: 1rem;
 }
 
 .hero-buttons .btn:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
 .hero-buttons .btn-primary {
@@ -181,10 +273,17 @@ body {
     background: var(--gradient-success);
 }
 
+.hero-buttons .btn-outline-light {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+}
+
 .hero-buttons .btn-outline-light:hover {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     color: var(--white);
+    border-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Sections */
@@ -561,17 +660,32 @@ section h1::after {
 }
 
 /* Responsive design */
+@media (max-width: 992px) {
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .hero_pitch {
+        margin: 0 auto 18px;
+    }
+    
+    .hero-badges {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     .hero_title {
         font-size: 2.8rem;
     }
     
     .hero_desc {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
-    .hero_sub {
-        font-size: 1.1rem;
+    .hero_pitch {
+        font-size: 1rem;
     }
     
     .hero-buttons .btn {
@@ -615,8 +729,8 @@ section h1::after {
         font-size: 1.2rem;
     }
     
-    .hero_sub {
-        font-size: 1rem;
+    .hero_pitch {
+        font-size: 0.95rem;
     }
     
     section h1 {
@@ -637,6 +751,11 @@ section h1::after {
     
     .skillsIcon {
         font-size: 2.5rem;
+    }
+    
+    .badge-tech {
+        font-size: 0.8rem;
+        padding: 6px 10px;
     }
 }
 
