@@ -1,8 +1,81 @@
-// Portfolio Yasser - Animations fluides et interactions
+// ========================================
+// PORTFOLIO YASSER - JavaScript Moderne
+// Dark Mode + Animations + Interactions
+// ========================================
+
 (function() {
     'use strict';
     
-    // Animation de révélation au scroll avec IntersectionObserver
+    // ========================================
+    // DARK MODE TOGGLE
+    // ========================================
+    
+    const initDarkMode = () => {
+        // Récupérer la préférence sauvegardée ou détecter la préférence système
+        const getInitialTheme = () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) return savedTheme;
+            
+            // Si pas de préférence sauvegardée, utiliser la préférence système
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        
+        // Appliquer le thème
+        const applyTheme = (theme) => {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            
+            // Mettre à jour l'icône du bouton si présent
+            const themeIcon = document.querySelector('.theme-toggle i');
+            if (themeIcon) {
+                themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            }
+        };
+        
+        // Initialiser le thème au chargement
+        const initialTheme = getInitialTheme();
+        applyTheme(initialTheme);
+        
+        // Créer le bouton toggle si pas déjà présent
+        const createThemeToggle = () => {
+            const navbar = document.querySelector('.navbar-nav');
+            if (!navbar || document.querySelector('.theme-toggle')) return;
+            
+            const themeToggle = document.createElement('li');
+            themeToggle.className = 'nav-item';
+            themeToggle.innerHTML = `
+                <a class="nav-link theme-toggle" href="#" role="button" aria-label="Toggle dark mode">
+                    <i class="${initialTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon'}"></i>
+                </a>
+            `;
+            
+            navbar.appendChild(themeToggle);
+        };
+        
+        createThemeToggle();
+        
+        // Gérer le clic sur le bouton toggle
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.theme-toggle')) {
+                e.preventDefault();
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                applyTheme(newTheme);
+            }
+        });
+        
+        // Écouter les changements de préférence système
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    };
+    
+    // ========================================
+    // ANIMATIONS AU SCROLL
+    // ========================================
+    
     const initScrollReveal = () => {
         const elements = document.querySelectorAll('.loading');
         
@@ -37,7 +110,10 @@
         });
     };
     
-    // Navbar dynamique au scroll
+    // ========================================
+    // NAVBAR DYNAMIQUE
+    // ========================================
+    
     const initNavbarScroll = () => {
         const navbar = document.querySelector('.navbar');
         let lastScrollY = window.scrollY;
@@ -65,7 +141,10 @@
         window.addEventListener('scroll', updateNavbar, { passive: true });
     };
     
-    // Navigation smooth avec offset pour navbar fixe
+    // ========================================
+    // NAVIGATION SMOOTH
+    // ========================================
+    
     const initSmoothAnchors = () => {
         const anchorLinks = document.querySelectorAll('a[href^="#"]');
         
@@ -73,7 +152,7 @@
             link.addEventListener('click', (e) => {
                 const href = link.getAttribute('href');
                 
-                if (href.length > 1) {
+                if (href.length > 1 && !link.classList.contains('theme-toggle')) {
                     const target = document.querySelector(href);
                     
                     if (target) {
@@ -98,7 +177,10 @@
         });
     };
     
-    // Mise à jour automatique du lien actif selon la section visible
+    // ========================================
+    // NAVIGATION ACTIVE AUTO
+    // ========================================
+    
     const initActiveNavigation = () => {
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
@@ -127,7 +209,10 @@
         });
     };
     
-    // Animation du formulaire de contact
+    // ========================================
+    // FORMULAIRE CONTACT
+    // ========================================
+    
     const initContactForm = () => {
         const form = document.querySelector('.contact-form');
         if (!form) return;
@@ -145,9 +230,32 @@
                 }
             });
         });
+        
+        // Gérer la soumission du formulaire
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Récupérer les valeurs
+            const name = form.querySelector('#name').value;
+            const email = form.querySelector('#email').value;
+            const subject = form.querySelector('#subject').value;
+            const message = form.querySelector('#message').value;
+            
+            // Construire le lien mailto
+            const mailtoLink = `mailto:yasseryoussoufm@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            
+            // Ouvrir le client email
+            window.location.href = mailtoLink;
+            
+            // Optionnel : Réinitialiser le formulaire
+            // form.reset();
+        });
     };
     
-    // Parallax léger sur le hero
+    // ========================================
+    // PARALLAX LÉGER
+    // ========================================
+    
     const initParallax = () => {
         const hero = document.querySelector('.bgimage');
         if (!hero) return;
@@ -160,7 +268,10 @@
         }, { passive: true });
     };
     
-    // Animation des compteurs (si présents)
+    // ========================================
+    // ANIMATION COMPTEURS
+    // ========================================
+    
     const initCounters = () => {
         const counters = document.querySelectorAll('.counter');
         
@@ -191,7 +302,40 @@
         });
     };
     
-    // Initialisation au chargement de la page
+    // ========================================
+    // ANIMATION PROGRESS BARS
+    // ========================================
+    
+    const initProgressBars = () => {
+        const progressBars = document.querySelectorAll('.progress-bar');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBar = entry.target;
+                    const width = progressBar.style.width;
+                    progressBar.style.width = '0%';
+                    
+                    setTimeout(() => {
+                        progressBar.style.width = width;
+                    }, 100);
+                    
+                    observer.unobserve(progressBar);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+        
+        progressBars.forEach(bar => {
+            observer.observe(bar);
+        });
+    };
+    
+    // ========================================
+    // INITIALISATION GLOBALE
+    // ========================================
+    
     const init = () => {
         // Marquer les sections pour animation
         const sectionsToAnimate = ['#about', '#skills', '#portfolio', '#contact'];
@@ -213,6 +357,7 @@
         initStaggerAnimation('#portfolio .row');
         
         // Initialiser toutes les fonctionnalités
+        initDarkMode();            // NOUVEAU: Dark Mode Toggle
         initScrollReveal();
         initNavbarScroll();
         initSmoothAnchors();
@@ -220,11 +365,15 @@
         initContactForm();
         initParallax();
         initCounters();
+        initProgressBars();        // NOUVEAU: Animation progress bars
         
         // Animation d'entrée du hero
         setTimeout(() => {
             document.querySelector('.hero-text')?.classList.add('loaded');
         }, 300);
+        
+        console.log('🚀 Portfolio chargé avec succès!');
+        console.log('🌓 Dark Mode disponible - cliquez sur l\'icône lune/soleil');
     };
     
     // Démarrer quand le DOM est prêt
