@@ -1,677 +1,532 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <title>Mohamed Yasser - Développeur Full-Stack | React • Node.js • TypeScript</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mohamed Yasser - Développeur Full-Stack avec 3 ans d'expérience React. 12+ composants en production, -18% de temps de chargement. Disponible en CDI.">
-  <meta name="author" content="Mohamed Yasser">
-  <meta name="keywords" content="développeur web, React, JavaScript, Node.js, TypeScript, full-stack, CDI, Paris, microservices, Docker">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Mohamed Yasser - Développeur Full-Stack">
-  <meta property="og:description" content="3 ans d'expérience React | 12+ composants en production | Disponible CDI">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yasserseryas.github.io/Yasser.github.io/">
-  <meta property="og:image" content="https://yasserseryas.github.io/Yasser.github.io/images/about.jpeg">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mohamed Yasser - Développeur Full-Stack">
-  <meta name="twitter:description" content="3 ans React | 12+ composants prod | -18% perf | CDI">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-</head>
+<!doctype html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youssouf Mohamed Yasser — Développeur Full-Stack</title>
+    <meta
+      name="description"
+      content="Portfolio de Youssouf Mohamed Yasser, développeur full-stack spécialisé React, Node.js, microservices et applications web modernes."
+    />
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/script/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-shell">
+        <a class="brand" href="#top" aria-label="Accueil">
+          <span class="brand-mark">YM</span>
+          <span class="brand-text">Youssouf Mohamed Yasser</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navigation principale">
+          <a href="#about">À propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#experience">Expériences</a>
+          <a href="#education">Formation</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Basculer le thème"
+          >
+            <i class="bi bi-sun"></i>
+          </button>
+          <a
+            class="btn btn-sm btn-ghost"
+            href="https://github.com/YasserSeryas"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow-group">
+              <span class="eyebrow">Disponible en CDI / CDD</span>
+              <span class="status-dot">Nantes · mobilité Île-de-France</span>
+            </div>
+
+            <h1>
+              Développeur Full-Stack orienté produit, performance et mise en
+              production.
+            </h1>
+
+            <p class="hero-lead">
+              Je conçois des applications web modernes avec React, Node.js et
+              des architectures microservices. J'ai travaillé en production sur
+              des plateformes B2B et je construis des projets personnels
+              complets, du front-end au CI/CD.
+            </p>
+
+            <div class="hero-highlights" role="list" aria-label="Points clés">
+              <span role="listitem">React · Redux · TypeScript</span>
+              <span role="listitem">Node.js · Express · Spring Boot</span>
+              <span role="listitem">Microservices · Docker · CI/CD</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">Voir mes projets</a>
+              <a class="btn btn-secondary" href="#contact">Me contacter</a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img
+              src="/images/moi.png"
+              alt="Youssouf Mohamed Yasser, développeur Full-Stack"
+              width="320"
+              height="320"
+              loading="eager"
+            />
+          </div>
+          <aside
+            class="hero-panel reveal reveal-delay-1"
+            aria-label="Indicateurs clés"
+          >
+            <div class="metric-card">
+              <strong>12+</strong>
+              <span>Composants React livrés en production</span>
+            </div>
+            <div class="metric-card">
+              <strong>-18%</strong>
+              <span>Temps de chargement optimisé</span>
+            </div>
+            <div class="metric-card">
+              <strong>6</strong>
+              <span>Microservices sur un projet personnel</span>
+            </div>
+            <div class="metric-card">
+              <strong>50+</strong>
+              <span>Endpoints sur le projet Spotify Clone</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container split-section">
+          <div class="section-heading reveal">
+            <span class="section-kicker">À propos</span>
+            <h2>Un profil full-stack avec une vraie logique de livraison.</h2>
+          </div>
+
+          <div class="content-card reveal reveal-delay-1">
+            <p>
+              Développeur Full-Stack basé à Nantes, je conçois des interfaces
+              web performantes et des backends robustes pour des applications
+              modernes. Pendant mon alternance chez Elab Fluxod, j'ai développé
+              des plateformes B2B de gestion de flux de données dans un cadre
+              Agile, avec des mises en production réelles.
+            </p>
+            <p>
+              Mon positionnement est clair : je ne travaille pas seulement
+              l'interface, mais l'ensemble de la chaîne, de l'intégration API à
+              l'automatisation du déploiement. J'accorde une attention
+              particulière à la qualité du code, à la modularité et à la
+              performance.
+            </p>
+            <p>
+              Je suis diplômé d'un Master Expert en Développement Logiciel chez
+              Ynov Paris. Mon parcours inclut aussi une expérience académique en
+              Chine et une certification HSK 4, un élément différenciant dans un
+              profil tech.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section" id="skills">
         <div class="container">
-            <a class="navbar-brand" href="#home">Mohamed Yasser</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Expérience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+          <div class="section-heading reveal">
+            <span class="section-kicker">Compétences</span>
+            <h2>Une stack organisée par niveau d'impact en projet.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Front-end</h3>
+              <p>React, Redux, TypeScript, JavaScript ES6+, HTML5, CSS3</p>
+              <small>Compléments : Vue 3, Angular, React Native</small>
+            </article>
+            <article class="skill-card reveal reveal-delay-1">
+              <h3>Back-end</h3>
+              <p>Node.js, Express.js, Spring Boot, API RESTful</p>
+              <small>Complément : PHP / Laravel</small>
+            </article>
+            <article class="skill-card reveal reveal-delay-2">
+              <h3>Bases de données</h3>
+              <p>PostgreSQL, MySQL, MongoDB</p>
+              <small>Cache et optimisation : Redis</small>
+            </article>
+            <article class="skill-card reveal">
+              <h3>DevOps & outils</h3>
+              <p>Docker, Jenkins, GitHub Actions, Git, Nginx, AWS</p>
+              <small>CI/CD, déploiement, automatisation</small>
+            </article>
+            <article class="skill-card reveal reveal-delay-1">
+              <h3>Intégrations</h3>
+              <p>JWT, OAuth, Stripe, Swagger, FFmpeg, Prometheus, Grafana</p>
+              <small>API, sécurité, monitoring</small>
+            </article>
+            <article class="skill-card reveal reveal-delay-2">
+              <h3>Méthodes</h3>
+              <p>Microservices, MVC, Agile, TDD, architecture événementielle</p>
+              <small>Approche orientée qualité et maintenabilité</small>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Projets</span>
+            <h2>
+              Des projets choisis pour montrer de la profondeur technique.
+            </h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card featured reveal">
+              <div class="project-meta">
+                <span class="tag">Projet personnel</span>
+                <span class="tag muted">2025 — Présent</span>
+              </div>
+              <h3>Plateforme de réservation & billetterie</h3>
+              <p class="project-pitch">
+                Plateforme full-stack pensée en microservices pour gérer
+                authentification, paiements, notifications, monitoring et
+                logique métier événementielle.
+              </p>
+              <p>
+                Le projet démontre une capacité à concevoir une architecture
+                complète : 6 microservices, un front React avec Redux,
+                l'intégration Stripe, l'authentification JWT/OAuth, la
+                supervision Prometheus/Grafana et une chaîne CI/CD via GitHub
+                Actions.
+              </p>
+              <div class="project-stack">
+                <span>React</span><span>Redux</span><span>Node.js</span
+                ><span>Stripe</span><span>Docker</span><span>Prometheus</span>
+              </div>
+              <ul class="project-points">
+                <li>
+                  <strong>Rôle :</strong> conception et développement du projet
+                  de bout en bout
+                </li>
+                <li>
+                  <strong>Valeur :</strong> architecture prête à monter en
+                  complexité et à être monitorée
+                </li>
+                <li>
+                  <strong>À renforcer :</strong> captures d'écran, démo en
+                  ligne, métriques de charge
+                </li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal reveal-delay-1">
+              <div class="project-meta">
+                <span class="tag">Binôme</span>
+                <span class="tag muted">2025</span>
+              </div>
+              <h3>Spotify Clone</h3>
+              <p class="project-pitch">
+                Application de streaming audio avec 50+ endpoints, conversion
+                média et optimisation des performances.
+              </p>
+              <p>
+                Le projet combine streaming, cache Redis, traitement média via
+                FFmpeg, compression d'images, documentation OpenAPI et tests
+                avec Jest / Supertest.
+              </p>
+              <div class="project-stack">
+                <span>Express</span><span>React</span><span>Redis</span
+                ><span>FFmpeg</span><span>Swagger</span>
+              </div>
+              <ul class="project-points">
+                <li>
+                  <strong>Rôle :</strong> non précisé avec assez de détail dans
+                  le CV
+                </li>
+                <li>
+                  <strong>Valeur :</strong> montre la maîtrise du média, des
+                  performances et des tests
+                </li>
+                <li>
+                  <strong>À renforcer :</strong> expliciter ta contribution
+                  exacte dans le binôme
+                </li>
+              </ul>
+            </article>
+
+            <article class="project-card reveal reveal-delay-2">
+              <div class="project-meta">
+                <span class="tag">Hackathon</span>
+                <span class="tag muted">2023</span>
+              </div>
+              <h3>E-commerce en 48h</h3>
+              <p class="project-pitch">
+                Boutique MERN développée sous contrainte de temps avec
+                catalogue, panier et checkout.
+              </p>
+              <p>
+                Un projet utile pour valoriser la rapidité d'exécution, les
+                arbitrages techniques et la capacité à livrer un produit
+                fonctionnel dans un temps court.
+              </p>
+              <div class="project-stack">
+                <span>MongoDB</span><span>Express</span><span>React</span
+                ><span>Node.js</span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span class="tag">Projet académique</span>
+                <span class="tag muted">2023</span>
+              </div>
+              <h3>Application Android — Open Data</h3>
+              <p class="project-pitch">
+                Application mobile avec backend Spring Boot et interface Android
+                native en Kotlin.
+              </p>
+              <p>
+                Le projet montre une capacité à sortir du web front classique
+                pour consommer une API REST et afficher des données dynamiques
+                dans un environnement mobile natif.
+              </p>
+              <div class="project-stack">
+                <span>Spring Boot</span><span>Kotlin</span><span>API REST</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Expériences</span>
+            <h2>Des missions réécrites avec un angle recrutement.</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">Déc. 2023 — Déc. 2025</div>
+              <div class="timeline-card">
+                <h3>Développeur Front-End en Alternance — Elab Fluxod</h3>
+                <p>
+                  Développement du front-end de 3 plateformes web B2B de gestion
+                  de flux de données dans une équipe Agile de 5 personnes.
+                </p>
+                <ul>
+                  <li>
+                    Livraison de 12+ composants React modulaires utilisés en
+                    production.
+                  </li>
+                  <li>
+                    Optimisation des performances avec un gain mesuré de 18% sur
+                    le temps de chargement.
+                  </li>
+                  <li>
+                    Mise en place du déploiement front-end automatisé avec
+                    Jenkins en staging et production.
+                  </li>
+                  <li>
+                    Intégration des API REST en collaboration avec l'équipe
+                    back-end.
+                  </li>
                 </ul>
-            </div>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal reveal-delay-1">
+              <div class="timeline-date">2023</div>
+              <div class="timeline-card">
+                <h3>Développeur Web — AKA Logistique et Transport</h3>
+                <p>
+                  Réalisation en autonomie complète d'un site vitrine WordPress
+                  pour structurer la présence en ligne de l'entreprise.
+                </p>
+                <ul>
+                  <li>
+                    Développement d'un thème sur mesure aligné avec l'identité
+                    visuelle.
+                  </li>
+                  <li>
+                    Configuration des plugins clés : formulaire, SEO, cache.
+                  </li>
+                  <li>
+                    Mise en production du site et formation du client à son
+                    administration.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal reveal-delay-2">
+              <div class="timeline-date">2022</div>
+              <div class="timeline-card">
+                <h3>Développeur Web — Accoord Nantes</h3>
+                <p>
+                  Développement de deux outils internes destinés à digitaliser
+                  des processus administratifs.
+                </p>
+                <ul>
+                  <li>
+                    Création d'un calculateur de Quotient Familial en JavaScript
+                    vanilla.
+                  </li>
+                  <li>
+                    Développement d'un annuaire téléphonique CRUD en Laravel /
+                    MySQL.
+                  </li>
+                  <li>
+                    Gestion de plus de 470 contacts avec recherche avancée et
+                    sécurisation applicative.
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
-    </nav>
-    
-    <!-- Hero Section Optimisée avec vraies métriques -->
-    <section class="bgimage" id="home">
-        <div class="container">
-            <div class="row align-items-center hero-wrap">
-                <div class="col-lg-7 col-md-12">
-                    <div class="hero-text">
-                        <h1 class="hero_title">Mohamed Yasser</h1>
-                        <p class="hero_desc">Développeur Full-Stack | React • Node.js • TypeScript</p>
-                        <p class="hero_pitch">
-                            <strong>3 ans d'expérience React</strong> avec spécialisation en architectures microservices. 
-                            <strong>1 an d'alternance</strong> chez Elab Fluxod : <strong>12+ composants React</strong> 
-                            déployés en production, <strong>-18% de temps de chargement</strong> optimisé.
-                        </p>
+      </section>
 
-                        <!-- Métriques visuelles -->
-                        <div class="hero-stats mt-4 mb-4">
-                            <div class="stat-card">
-                                <h3>3 ans</h3>
-                                <p>React</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>12+</h3>
-                                <p>Composants prod</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>-18%</h3>
-                                <p>Temps chargement</p>
-                            </div>
-                            <div class="stat-card">
-                                <h3>7</h3>
-                                <p>Interfaces Redux</p>
-                            </div>
-                        </div>
+      <section class="section" id="education">
+        <div class="container two-column">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Formation</span>
+            <h2>
+              Un parcours orienté développement logiciel et ouverture
+              internationale.
+            </h2>
+          </div>
 
-                        <div class="hero-badges">
-                            <span class="badge badge-tech">React</span>
-                            <span class="badge badge-tech">TypeScript</span>
-                            <span class="badge badge-tech">Node.js</span>
-                            <span class="badge badge-tech">Docker</span>
-                            <span class="badge badge-tech">Redux Toolkit</span>
-                        </div>
-
-                        <div class="hero-buttons mt-4">
-                            <a href="#portfolio" class="btn btn-primary btn-lg me-2">
-                                <i class="fas fa-code"></i> Voir mes projets
-                            </a>
-                            <a href="assets/CV-Yasser-Youssouf-Mohamed.pdf" class="btn btn-outline-light btn-lg me-2" download>
-                                <i class="fas fa-download"></i> Télécharger mon CV
-                            </a>
-                            <a href="#contact" class="btn btn-success btn-lg">
-                                <i class="fas fa-envelope"></i> Me contacter
-                            </a>
-                        </div>
-                        
-                        <!-- Badge disponibilité -->
-                        <div class="mt-3">
-                            <span class="badge bg-success fs-6">
-                                <i class="fas fa-circle"></i> Disponible immédiatement pour CDI/CDD
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 d-none d-lg-block">
-                    <div class="hero-card float">
-                        <img src="images/about.jpeg" alt="Photo de Mohamed Yasser" class="hero-avatar" />
-                        <ul class="hero-meta">
-                            <li><i class="fas fa-map-marker-alt"></i> Paris, Île-de-France</li>
-                            <li><i class="fas fa-language"></i> Français, Anglais (C1), Chinois (HSK 4)</li>
-                            <li><i class="fas fa-briefcase"></i> 1 an alternance Elab Fluxod</li>
-                            <li><i class="fas fa-graduation-cap"></i> Master Ynov Paris</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          <div class="stacked-cards reveal reveal-delay-1">
+            <article class="mini-card">
+              <h3>Master Expert en Développement Logiciel</h3>
+              <p>Ynov Paris · 2024 — 2025</p>
+              <small>RNCP Niveau 7</small>
+            </article>
+            <article class="mini-card">
+              <h3>Master Informatique — Développement</h3>
+              <p>Ynov Nantes · 2020 — 2024</p>
+            </article>
+            <article class="mini-card">
+              <h3>Informatique Générale & HSK 4</h3>
+              <p>Shanghai Institute of Technology · 2015 — 2019</p>
+              <small>Certification officielle en chinois</small>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- About Section Améliorée avec vraies données CV -->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">À Propos</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/about.jpeg" class="imageAboutPage" alt="Photo de Mohamed Yasser">
-                </div>
-                <div class="col-lg-8">
-                    <p class="lead"> 
-                        Développeur Full-Stack avec <strong>3 ans d'expérience React</strong> et spécialisation 
-                        en architectures microservices. Diplômé d'un <strong>Master en Développement Web (Ynov Paris)</strong>, 
-                        j'ai contribué à l'optimisation de performances front-end (<strong>-18% de temps de chargement</strong>) 
-                        et à l'intégration de <strong>Redux Toolkit sur 7 interfaces critiques</strong> en production chez Elab Fluxod.
-                    </p>
-                    
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-user text-primary"></i> <strong>Nom :</strong> Mohamed Yasser</li>
-                                <li><i class="fas fa-phone text-primary"></i> <strong>Téléphone :</strong> 07 64 51 27 79</li>
-                                <li><i class="fas fa-envelope text-primary"></i> <strong>Email :</strong> yasseryoussoufm@gmail.com</li>
-                                <li><i class="fas fa-map-marker-alt text-primary"></i> <strong>Localisation :</strong> Paris, France</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-briefcase text-primary"></i> <strong>Statut :</strong> Disponible CDI/CDD</li>
-                                <li><i class="fas fa-language text-primary"></i> <strong>Langues :</strong> FR, EN (C1), CN (HSK 4)</li>
-                                <li><i class="fas fa-code text-primary"></i> <strong>Spécialité :</strong> React / Node.js</li>
-                                <li><i class="fas fa-graduation-cap text-primary"></i> <strong>Formation :</strong> Master Ynov Paris</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-4">
-                        <h5><i class="fas fa-rocket text-primary"></i> Stack Principale</h5>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <p class="mb-2"><strong>Frontend</strong></p>
-                                <ul class="list-unstyled small">
-                                    <li>• React (3 ans)</li>
-                                    <li>• TypeScript</li>
-                                    <li>• Redux Toolkit</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="mb-2"><strong>Backend</strong></p>
-                                <ul class="list-unstyled small">
-                                    <li>• Node.js</li>
-                                    <li>• Express.js</li>
-                                    <li>• Laravel</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="mb-2"><strong>DevOps</strong></p>
-                                <ul class="list-unstyled small">
-                                    <li>• Docker</li>
-                                    <li>• CI/CD (Jenkins)</li>
-                                    <li>• Git</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row mt-4">
-                        <div class="col-12">
-                            <h5><i class="fas fa-star text-warning"></i> Atouts Uniques</h5>
-                            <div class="d-flex flex-wrap gap-2 mt-2">
-                                <span class="badge bg-primary fs-6">✅ Master Ynov + Licence Chine</span>
-                                <span class="badge bg-success fs-6">✅ 1 an alternance Elab Fluxod</span>
-                                <span class="badge bg-info fs-6">✅ Trilingue (FR/EN/CN)</span>
-                                <span class="badge bg-warning text-dark fs-6">✅ Stack moderne</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <section class="section alt-section" id="contact">
+        <div class="container contact-grid">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Contact</span>
+            <h2>
+              Un portfolio utile doit se terminer par une prise de contact
+              simple.
+            </h2>
+            <p>
+              Je recherche actuellement une opportunité en CDI ou CDD comme
+              développeur full-stack. Pour une mission, un recrutement ou un
+              échange, voici les meilleurs points d'entrée.
+            </p>
+          </div>
+
+          <div class="contact-card reveal reveal-delay-1">
+            <a href="mailto:yasseryoussoufm@gmail.com"
+              >yasseryoussoufm@gmail.com</a
+            >
+            <a href="tel:+33764512779">07 64 51 27 79</a>
+            <a
+              href="https://www.linkedin.com/in/yasser-youssouf-mohamed-396b1a19a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/YasserSeryas"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <p class="contact-note">Nantes · mobilité Île-de-France</p>
+
+            <form class="contact-form" aria-label="Formulaire de contact">
+              <label>
+                Nom
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Votre nom"
+                  required
+                />
+              </label>
+              <label>
+                Email
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="votre@email.com"
+                  required
+                />
+              </label>
+              <label>
+                Sujet
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Objet de votre message"
+                  required
+                />
+              </label>
+              <label>
+                Message
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Décrivez votre besoin"
+                  required
+                ></textarea>
+              </label>
+              <button class="btn btn-primary btn-full" type="submit">
+                Envoyer un message
+              </button>
+            </form>
+          </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h1 class="text-center mb-5">Mes Compétences Techniques</h1>
-            
-            <!-- Frontend -->
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h3 class="text-center mb-4"><i class="fas fa-laptop-code text-primary"></i> Frontend</h3>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-react"></i>
-                            <h5 class="card-title mt-3">React</h5>
-                            <p class="small text-muted">3 ans d'expérience</p>
-                            <div class="progress mt-3">
-                                <div class="progress-bar bg-info" style="width: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-js-square"></i>
-                            <h5 class="card-title mt-3">TypeScript</h5>
-                            <p class="small text-muted">Production ready</p>
-                            <div class="progress mt-3">
-                                <div class="progress-bar bg-primary" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-js-square"></i>
-                            <h5 class="card-title mt-3">Redux Toolkit</h5>
-                            <p class="small text-muted">7 interfaces prod</p>
-                            <div class="progress mt-3">
-                                <div class="progress-bar bg-warning" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-html5"></i>
-                            <h5 class="card-title mt-3">HTML5 / CSS3</h5>
-                            <p class="small text-muted">Maîtrise avancée</p>
-                            <div class="progress mt-3">
-                                <div class="progress-bar bg-success" style="width: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Backend -->
-            <div class="row mb-5">
-                <div class="col-12">
-                    <h3 class="text-center mb-4"><i class="fas fa-server text-success"></i> Backend & DevOps</h3>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-node-js"></i>
-                            <h5 class="card-title mt-3">Node.js / Express</h5>
-                            <div class="progress mt-3">
-                                <div class="progress-bar bg-success" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-docker"></i>
-                            <h5 class="card-title mt-3">Docker / Microservices</h5>
-                            <div class="progress mt-3">
-                                <div class="progress-bar bg-primary" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-laravel"></i>
-                            <h5 class="card-title mt-3">Laravel / PHP</h5>
-                            <div class="progress mt-3">
-                                <div class="progress-bar bg-danger" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fas skillsIcon fa-database"></i>
-                            <h5 class="card-title mt-3">MySQL / MongoDB</h5>
-                            <div class="progress mt-3">
-                                <div class="progress-bar bg-info" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Autres langages -->
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="text-center mb-4"><i class="fas fa-code text-warning"></i> Autres Compétences</h3>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-java"></i>
-                            <h6 class="card-title mt-2">Java / Spring</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-python"></i>
-                            <h6 class="card-title mt-2">Python</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-android"></i>
-                            <h6 class="card-title mt-2">Kotlin / Android</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fab skillsIcon fa-git-alt"></i>
-                            <h6 class="card-title mt-2">Git / GitHub</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fas skillsIcon fa-cogs"></i>
-                            <h6 class="card-title mt-2">CI/CD</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 mt-3">
-                    <div class="card skillsText h-100">
-                        <div class="card-body text-center">
-                            <i class="fas skillsIcon fa-users"></i>
-                            <h6 class="card-title mt-2">Agile / Scrum</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section avec vraies données CV -->
-    <section id="experience">
-        <div class="container">
-            <h1 class="text-center mb-5">Expérience Professionnelle</h1>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <!-- Alternance Elab Fluxod -->
-                    <div class="card mb-4 experience-card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="experience-date">
-                                        <span class="badge bg-primary fs-6">Déc 2023 - Aujourd'hui</span>
-                                        <p class="text-muted mt-2 mb-0"><i class="fas fa-map-marker-alt"></i> Île-de-France</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="text-primary">Développeur Front-End - Alternance</h4>
-                                    <h6 class="text-muted">Elab Fluxod</h6>
-                                    <p class="mt-3">
-                                        <strong>Contribution à la conception et au développement de 12+ composants React modulaires.</strong> 
-                                        Intégration d'une gestion d'état globale avec Redux Toolkit, optimisant la cohérence des données 
-                                        sur 7 interfaces utilisateur clés. Participation à l'amélioration continue des performances, 
-                                        aboutissant à une <strong>réduction de 18% du temps de chargement</strong> et collaboration étroite 
-                                        avec les équipes UI/UX et back-end.
-                                    </p>
-                                    <div class="skills-used">
-                                        <span class="badge bg-info me-2">React</span>
-                                        <span class="badge bg-primary me-2">Redux Toolkit</span>
-                                        <span class="badge bg-warning me-2">TypeScript</span>
-                                        <span class="badge bg-success me-2">Optimisation Perf</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Stage AKA -->
-                    <div class="card mb-4 experience-card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="experience-date">
-                                        <span class="badge bg-secondary fs-6">2023</span>
-                                        <p class="text-muted mt-2 mb-0"><i class="fas fa-map-marker-alt"></i> Île-de-France</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="text-primary">Développeur Web - Stage</h4>
-                                    <h6 class="text-muted">AKA Logistique et Transport</h6>
-                                    <p class="mt-3">
-                                        Développement complet d'un site vitrine sous WordPress pour présenter l'entreprise. 
-                                        Personnalisation d'un thème premium et intégration de <strong>8 plugins spécifiques</strong> 
-                                        pour répondre aux exigences fonctionnelles du client. Formation du client à l'utilisation 
-                                        du back-office pour la gestion autonome des contenus, assurant une transition fluide et 
-                                        une <strong>satisfaction client de 93%</strong>.
-                                    </p>
-                                    <div class="skills-used">
-                                        <span class="badge bg-primary me-2">WordPress</span>
-                                        <span class="badge bg-info me-2">PHP</span>
-                                        <span class="badge bg-success me-2">Web Design</span>
-                                        <span class="badge bg-warning me-2">Formation Client</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Stage Accoord -->
-                    <div class="card mb-4 experience-card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="experience-date">
-                                        <span class="badge bg-secondary fs-6">2022</span>
-                                        <p class="text-muted mt-2 mb-0"><i class="fas fa-map-marker-alt"></i> Nantes</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="text-primary">Développeur Web - Stage</h4>
-                                    <h6 class="text-muted">Accoord Nantes</h6>
-                                    <p class="mt-3">
-                                        Réalisation d'un outil interne de calcul en JavaScript vanilla pour les processus métiers. 
-                                        Développement d'une application CRUD d'annuaire téléphonique interne, utilisant le framework 
-                                        Laravel pour la gestion back-end et les API REST. Conception et mise en place du schéma de 
-                                        base de données MySQL, permettant la gestion efficace de <strong>plus de 470 contacts</strong> 
-                                        avec une fonctionnalité de recherche optimisée.
-                                    </p>
-                                    <div class="skills-used">
-                                        <span class="badge bg-warning me-2">JavaScript</span>
-                                        <span class="badge bg-danger me-2">Laravel</span>
-                                        <span class="badge bg-primary me-2">MySQL</span>
-                                        <span class="badge bg-info me-2">API REST</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center mb-5">Mes Projets Réalisés</h1>
-            
-            <!-- Projets principaux -->
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent h-100">
-                        <img class="card-img-top" src="images/project-microservices.jpg" alt="Billetterie Microservices" style="width:100%;height:200px;object-fit:cover;">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title">Billetterie Microservices</h4>
-                            <p class="card-text flex-grow-1">
-                                Application modulaire avec architecture microservices complète. Backend Express.js avec 
-                                4 services, frontend React avec Redux, paiements Stripe et notifications temps réel.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-success me-1">Express</span>
-                                <span class="badge bg-info me-1">React</span>
-                                <span class="badge bg-primary me-1">Docker</span>
-                                <span class="badge bg-warning me-1">Microservices</span>
-                            </div>
-                            <div class="text-center">
-                                <span class="badge bg-primary">2025 - En cours</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent h-100">
-                        <img class="card-img-top" src="images/project-spotify.jpg" alt="Spotify Clone" style="width:100%;height:200px;object-fit:cover;">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title">Clone Spotify</h4>
-                            <p class="card-text flex-grow-1">
-                                Simulation de l'interface Spotify avec intégration API authentique. Player audio fonctionnel, 
-                                gestion de playlists, système de favoris et dark mode responsive.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-success me-1">Express</span>
-                                <span class="badge bg-info me-1">React</span>
-                                <span class="badge bg-secondary me-1">API Spotify</span>
-                            </div>
-                            <div class="text-center">
-                                <span class="badge bg-primary">2025</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent h-100">
-                        <img class="card-img-top" src="images/project-android.jpg" alt="Application Android" style="width:100%;height:200px;object-fit:cover;">
-                        <div class="card-body d-flex flex-column">
-                            <h4 class="card-title">App Android Nantes Métropole</h4>
-                            <p class="card-text flex-grow-1">
-                                Application mobile Android native avec backend Spring Boot. Récupération et affichage 
-                                de données open-source via API REST.
-                            </p>
-                            <div class="mb-3">
-                                <span class="badge bg-success me-1">Spring Boot</span>
-                                <span class="badge bg-primary me-1">Kotlin</span>
-                                <span class="badge bg-warning me-1">Android</span>
-                                <span class="badge bg-info me-1">API REST</span>
-                            </div>
-                            <div class="text-center">
-                                <span class="badge bg-secondary">2023</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-5">
-                <a href="https://github.com/YasserSeryas" class="btn btn-outline-primary btn-lg" target="_blank">
-                    <i class="fab fa-github"></i> Voir tous mes projets sur GitHub
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center mb-5">Me Contacter</h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <div class="contact-info">
-                        <h3><i class="fas fa-handshake text-primary"></i> Discutons de votre projet</h3>
-                        <p class="lead">
-                            Je suis actuellement à la recherche d'une opportunité en <strong>CDI ou CDD</strong> 
-                            comme développeur full-stack. N'hésitez pas à me contacter pour 
-                            discuter de vos projets ou d'une collaboration.
-                        </p>
-                        
-                        <div class="contact-details mt-4">
-                            <div class="contact-item mb-3">
-                                <i class="fas fa-map-marker-alt text-primary"></i>
-                                <span class="ms-3"><strong>Localisation :</strong> Paris, Île-de-France</span>
-                            </div>
-                            <div class="contact-item mb-3">
-                                <i class="fas fa-phone text-primary"></i>
-                                <span class="ms-3"><strong>Téléphone :</strong> 07 64 51 27 79</span>
-                            </div>
-                            <div class="contact-item mb-3">
-                                <i class="fas fa-envelope text-primary"></i>
-                                <span class="ms-3"><strong>Email :</strong> yasseryoussoufm@gmail.com</span>
-                            </div>
-                            <div class="contact-item mb-3">
-                                <i class="fas fa-language text-primary"></i>
-                                <span class="ms-3"><strong>Langues :</strong> Français, Anglais (C1), Chinois (HSK 4)</span>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-4">
-                            <h5><i class="fas fa-check-circle text-success"></i> Disponibilité</h5>
-                            <div class="alert alert-success" role="alert">
-                                <i class="fas fa-briefcase"></i> 
-                                <strong>Disponible immédiatement</strong> pour un CDI/CDD de développeur full-stack
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nom *</label>
-                            <input type="text" class="form-control form-control-lg" id="name" placeholder="Votre nom" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email *</label>
-                            <input type="email" class="form-control form-control-lg" id="email" placeholder="votre.email@exemple.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="subject" class="form-label">Sujet *</label>
-                            <input type="text" class="form-control form-control-lg" id="subject" placeholder="Objet de votre message" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message *</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Décrivez votre projet ou votre offre d'emploi..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg w-100">
-                            <i class="fas fa-paper-plane"></i> Envoyer le message
-                        </button>
-                        <p class="text-muted mt-2 small">* Champs obligatoires</p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="social-icons mt-4 mb-4">
-                        <a href="https://github.com/YasserSeryas" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/yasser-youssouf-mohamed" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:yasseryoussoufm@gmail.com" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="assets/CV-Yasser-Youssouf-Mohamed.pdf" title="Télécharger CV" download>
-                            <i class="fas fa-download"></i>
-                        </a>
-                    </div>
-                    <p class="text-center text-muted">
-                        &copy; 2025 Mohamed Yasser - Développeur Full-Stack<br>
-                        <small>3 ans React | 12+ composants prod | -18% perf | Disponible CDI/CDD</small>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script/script.js"></script>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
