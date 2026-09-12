@@ -15,7 +15,7 @@
 **Développeur Full-Stack** avec **3 ans d'expérience React** et spécialisation en architectures microservices.
 
 - 🎓 **Master en Développement Web** - Ynov Paris (2024-2025)
-- 💼 **1 an d'alternance** chez Elab Fluxod (Déc 2023 - Présent)
+- 💼 **2 ans d'alternance** chez Elab Fluxod (Déc 2023 - Présent)
 - 📊 **12+ composants React** déployés en production
 - ⚡ **-18% de temps de chargement** optimisé sur interfaces critiques
 - 🌍 **Trilingue** : Français, Anglais (C1), Chinois Mandarin (HSK 4)
