@@ -1,532 +1,284 @@
-<!doctype html>
-<html lang="fr" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youssouf Mohamed Yasser — Développeur Full-Stack</title>
-    <meta
-      name="description"
-      content="Portfolio de Youssouf Mohamed Yasser, développeur full-stack spécialisé React, Node.js, microservices et applications web modernes."
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script defer src="./script/script.js"></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Aller au contenu</a>
-
-    <header class="site-header" id="top">
-      <div class="container nav-shell">
-        <a class="brand" href="#top" aria-label="Accueil">
-          <span class="brand-mark">YM</span>
-          <span class="brand-text">Youssouf Mohamed Yasser</span>
-        </a>
-
-        <nav class="main-nav" aria-label="Navigation principale">
-          <a href="#about">À propos</a>
-          <a href="#skills">Compétences</a>
-          <a href="#projects">Projets</a>
-          <a href="#experience">Expériences</a>
-          <a href="#education">Formation</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="nav-actions">
-          <button
-            class="theme-toggle"
-            type="button"
-            data-theme-toggle
-            aria-label="Basculer le thème"
-          >
-            <i class="bi bi-sun"></i>
-          </button>
-          <a
-            class="btn btn-sm btn-ghost"
-            href="https://github.com/YasserSeryas"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-        </div>
-      </div>
-    </header>
-
-    <main id="main">
-      <section class="hero section">
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <div class="eyebrow-group">
-              <span class="eyebrow">Disponible en CDI / CDD</span>
-              <span class="status-dot">Nantes · mobilité Île-de-France</span>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasser Seryas - Portfolio</title>
+    <meta name="description" content="Portfolio de Yasser Seryas, développeur full-stack passionné··e">
+    <meta name="keywords" content="portfolio, développeur, full-stack, Yasser, Seryas, web, applications">
+    <meta name="author" content="Yasser Seryas">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Yasser Seryas - Portfolio">
+    <meta property="og:description" content="Portfolio de Yasser Seryas, développeur full-stack passionné··e">
+    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:url" content="https://yasserseryas.github.io">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Yasser Seryas - Portfolio">
+    <meta name="twitter:description" content="Portfolio de Yasser Seryas, développeur full-stack passionné··e">
+    <meta name="twitter:image" content="images/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GGZ3XB4CPL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GGZ3XB4CPL');
+    </script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">YS</span>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">À·e propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Compé··tences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+        </div>
+    </nav>
 
-            <h1>
-              Développeur Full-Stack orienté produit, performance et mise en
-              production.
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">
+                <span class="gradient-text">Yasser Seryas</span>
             </h1>
-
-            <p class="hero-lead">
-              Je conçois des applications web modernes avec React, Node.js et
-              des architectures microservices. J'ai travaillé en production sur
-              des plateformes B2B et je construis des projets personnels
-              complets, du front-end au CI/CD.
+            <p class="hero-subtitle fade-in-delay">
+                Développeur · euse Full-Stack
             </p>
-
-            <div class="hero-highlights" role="list" aria-label="Points clés">
-              <span role="listitem">React · Redux · TypeScript</span>
-              <span role="listitem">Node.js · Express · Spring Boot</span>
-              <span role="listitem">Microservices · Docker · CI/CD</span>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
             </div>
-
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">Voir mes projets</a>
-              <a class="btn btn-secondary" href="#contact">Me contacter</a>
-            </div>
-          </div>
-          <div class="hero-photo">
-            <img
-              src="./images/moi.png"
-              alt="Youssouf Mohamed Yasser, développeur Full-Stack"
-              width="320"
-              height="320"
-              loading="eager"
-            />
-          </div>
-          <aside
-            class="hero-panel reveal reveal-delay-1"
-            aria-label="Indicateurs clés"
-          >
-            <div class="metric-card">
-              <strong>12+</strong>
-              <span>Composants React livrés en production</span>
-            </div>
-            <div class="metric-card">
-              <strong>-18%</strong>
-              <span>Temps de chargement optimisé</span>
-            </div>
-            <div class="metric-card">
-              <strong>6</strong>
-              <span>Microservices sur un projet personnel</span>
-            </div>
-            <div class="metric-card">
-              <strong>50+</strong>
-              <span>Endpoints sur le projet Spotify Clone</span>
-            </div>
-          </aside>
         </div>
-      </section>
-
-      <section class="section" id="about">
-        <div class="container split-section">
-          <div class="section-heading reveal">
-            <span class="section-kicker">À propos</span>
-            <h2>Un profil full-stack avec une vraie logique de livraison.</h2>
-          </div>
-
-          <div class="content-card reveal reveal-delay-1">
-            <p>
-              Développeur Full-Stack basé à Nantes, je conçois des interfaces
-              web performantes et des backends robustes pour des applications
-              modernes. Pendant mon alternance chez Elab Fluxod, j'ai développé
-              des plateformes B2B de gestion de flux de données dans un cadre
-              Agile, avec des mises en production réelles.
-            </p>
-            <p>
-              Mon positionnement est clair : je ne travaille pas seulement
-              l'interface, mais l'ensemble de la chaîne, de l'intégration API à
-              l'automatisation du déploiement. J'accorde une attention
-              particulière à la qualité du code, à la modularité et à la
-              performance.
-            </p>
-            <p>
-              Je suis diplômé d'un Master Expert en Développement Logiciel chez
-              Ynov Paris. Mon parcours inclut aussi une expérience académique en
-              Chine et une certification HSK 4, un élément différenciant dans un
-              profil tech.
-            </p>
-          </div>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
         </div>
-      </section>
+    </section>
 
-      <section class="section alt-section" id="skills">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="section-kicker">Compétences</span>
-            <h2>Une stack organisée par niveau d'impact en projet.</h2>
-          </div>
-
-          <div class="skills-grid">
-            <article class="skill-card reveal">
-              <h3>Front-end</h3>
-              <p>React, Redux, TypeScript, JavaScript ES6+, HTML5, CSS3</p>
-              <small>Compléments : Vue 3, Angular, React Native</small>
-            </article>
-            <article class="skill-card reveal reveal-delay-1">
-              <h3>Back-end</h3>
-              <p>Node.js, Express.js, Spring Boot, API RESTful</p>
-              <small>Complément : PHP / Laravel</small>
-            </article>
-            <article class="skill-card reveal reveal-delay-2">
-              <h3>Bases de données</h3>
-              <p>PostgreSQL, MySQL, MongoDB</p>
-              <small>Cache et optimisation : Redis</small>
-            </article>
-            <article class="skill-card reveal">
-              <h3>DevOps & outils</h3>
-              <p>Docker, Jenkins, GitHub Actions, Git, Nginx, AWS</p>
-              <small>CI/CD, déploiement, automatisation</small>
-            </article>
-            <article class="skill-card reveal reveal-delay-1">
-              <h3>Intégrations</h3>
-              <p>JWT, OAuth, Stripe, Swagger, FFmpeg, Prometheus, Grafana</p>
-              <small>API, sécurité, monitoring</small>
-            </article>
-            <article class="skill-card reveal reveal-delay-2">
-              <h3>Méthodes</h3>
-              <p>Microservices, MVC, Agile, TDD, architecture événementielle</p>
-              <small>Approche orientée qualité et maintenabilité</small>
-            </article>
-          </div>
+            <h2 class="section-title">À·e propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Passionné··e par le développement web et la création d'explications numériques intuitives, 
+                        je conois des applications modernes et performantes. Actuellement en formation, 
+                        je me spécialise dans les technologies full-stack avec un fort accent sur 
+                        l'architecture logicielle et l'optimisation des performances.
+                    </p>
+                    <p class="about-description">
+                        Mon approche combine rigueur technique et créativité pour transformer 
+                        des concepts complexes en solutions élégantes et accessibles.
+                    </p>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section" id="projects">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="section-kicker">Projets</span>
-            <h2>
-              Des projets choisis pour montrer de la profondeur technique.
-            </h2>
-          </div>
-
-          <div class="projects-grid">
-            <article class="project-card featured reveal">
-              <div class="project-meta">
-                <span class="tag">Projet personnel</span>
-                <span class="tag muted">2025 — Présent</span>
-              </div>
-              <h3>Plateforme de réservation & billetterie</h3>
-              <p class="project-pitch">
-                Plateforme full-stack pensée en microservices pour gérer
-                authentification, paiements, notifications, monitoring et
-                logique métier événementielle.
-              </p>
-              <p>
-                Le projet démontre une capacité à concevoir une architecture
-                complète : 6 microservices, un front React avec Redux,
-                l'intégration Stripe, l'authentification JWT/OAuth, la
-                supervision Prometheus/Grafana et une chaîne CI/CD via GitHub
-                Actions.
-              </p>
-              <div class="project-stack">
-                <span>React</span><span>Redux</span><span>Node.js</span
-                ><span>Stripe</span><span>Docker</span><span>Prometheus</span>
-              </div>
-              <ul class="project-points">
-                <li>
-                  <strong>Rôle :</strong> conception et développement du projet
-                  de bout en bout
-                </li>
-                <li>
-                  <strong>Valeur :</strong> architecture prête à monter en
-                  complexité et à être monitorée
-                </li>
-                <li>
-                  <strong>À renforcer :</strong> captures d'écran, démo en
-                  ligne, métriques de charge
-                </li>
-              </ul>
-            </article>
-
-            <article class="project-card reveal reveal-delay-1">
-              <div class="project-meta">
-                <span class="tag">Binôme</span>
-                <span class="tag muted">2025</span>
-              </div>
-              <h3>Spotify Clone</h3>
-              <p class="project-pitch">
-                Application de streaming audio avec 50+ endpoints, conversion
-                média et optimisation des performances.
-              </p>
-              <p>
-                Le projet combine streaming, cache Redis, traitement média via
-                FFmpeg, compression d'images, documentation OpenAPI et tests
-                avec Jest / Supertest.
-              </p>
-              <div class="project-stack">
-                <span>Express</span><span>React</span><span>Redis</span
-                ><span>FFmpeg</span><span>Swagger</span>
-              </div>
-              <ul class="project-points">
-                <li>
-                  <strong>Rôle :</strong> non précisé avec assez de détail dans
-                  le CV
-                </li>
-                <li>
-                  <strong>Valeur :</strong> montre la maîtrise du média, des
-                  performances et des tests
-                </li>
-                <li>
-                  <strong>À renforcer :</strong> expliciter ta contribution
-                  exacte dans le binôme
-                </li>
-              </ul>
-            </article>
-
-            <article class="project-card reveal reveal-delay-2">
-              <div class="project-meta">
-                <span class="tag">Hackathon</span>
-                <span class="tag muted">2023</span>
-              </div>
-              <h3>E-commerce en 48h</h3>
-              <p class="project-pitch">
-                Boutique MERN développée sous contrainte de temps avec
-                catalogue, panier et checkout.
-              </p>
-              <p>
-                Un projet utile pour valoriser la rapidité d'exécution, les
-                arbitrages techniques et la capacité à livrer un produit
-                fonctionnel dans un temps court.
-              </p>
-              <div class="project-stack">
-                <span>MongoDB</span><span>Express</span><span>React</span
-                ><span>Node.js</span>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <div class="project-meta">
-                <span class="tag">Projet académique</span>
-                <span class="tag muted">2023</span>
-              </div>
-              <h3>Application Android — Open Data</h3>
-              <p class="project-pitch">
-                Application mobile avec backend Spring Boot et interface Android
-                native en Kotlin.
-              </p>
-              <p>
-                Le projet montre une capacité à sortir du web front classique
-                pour consommer une API REST et afficher des données dynamiques
-                dans un environnement mobile natif.
-              </p>
-              <div class="project-stack">
-                <span>Spring Boot</span><span>Kotlin</span><span>API REST</span>
-              </div>
-            </article>
-          </div>
+            <h2 class="section-title">Compé··tences</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Outils</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section alt-section" id="experience">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <div class="container">
-          <div class="section-heading reveal">
-            <span class="section-kicker">Expériences</span>
-            <h2>Des missions réécrites avec un angle recrutement.</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <div class="timeline-date">Déc. 2023 — Déc. 2025</div>
-              <div class="timeline-card">
-                <h3>Développeur Front-End en Alternance — Elab Fluxod</h3>
-                <p>
-                  Développement du front-end de 3 plateformes web B2B de gestion
-                  de flux de données dans une équipe Agile de 5 personnes.
-                </p>
-                <ul>
-                  <li>
-                    Livraison de 12+ composants React modulaires utilisés en
-                    production.
-                  </li>
-                  <li>
-                    Optimisation des performances avec un gain mesuré de 18% sur
-                    le temps de chargement.
-                  </li>
-                  <li>
-                    Mise en place du déploiement front-end automatisé avec
-                    Jenkins en staging et production.
-                  </li>
-                  <li>
-                    Intégration des API REST en collaboration avec l'équipe
-                    back-end.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal reveal-delay-1">
-              <div class="timeline-date">2023</div>
-              <div class="timeline-card">
-                <h3>Développeur Web — AKA Logistique et Transport</h3>
-                <p>
-                  Réalisation en autonomie complète d'un site vitrine WordPress
-                  pour structurer la présence en ligne de l'entreprise.
-                </p>
-                <ul>
-                  <li>
-                    Développement d'un thème sur mesure aligné avec l'identité
-                    visuelle.
-                  </li>
-                  <li>
-                    Configuration des plugins clés : formulaire, SEO, cache.
-                  </li>
-                  <li>
-                    Mise en production du site et formation du client à son
-                    administration.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal reveal-delay-2">
-              <div class="timeline-date">2022</div>
-              <div class="timeline-card">
-                <h3>Développeur Web — Accoord Nantes</h3>
-                <p>
-                  Développement de deux outils internes destinés à digitaliser
-                  des processus administratifs.
-                </p>
-                <ul>
-                  <li>
-                    Création d'un calculateur de Quotient Familial en JavaScript
-                    vanilla.
-                  </li>
-                  <li>
-                    Développement d'un annuaire téléphonique CRUD en Laravel /
-                    MySQL.
-                  </li>
-                  <li>
-                    Gestion de plus de 470 contacts avec recherche avancée et
-                    sécurisation applicative.
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </div>
+            <h2 class="section-title">Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Projet 1</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Application Web Full-Stack</h3>
+                        <p class="project-description">
+                            Développement d'une application complète avec authentication, 
+                            gestion de données en temps réel et interface responsive.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Projet 2</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">API RESTful</h3>
+                        <p class="project-description">
+                            Conception et implé··tation d'une API robuste avec documentation 
+                            complète, tests automatisé··e•s et déploiement continu.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Projet 3</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboard Analytics</h3>
+                        <p class="project-description">
+                            Interface de visualisation de données avec graphiques interactifs 
+                        et mises à jour en temps réel.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section" id="education">
-        <div class="container two-column">
-          <div class="section-heading reveal">
-            <span class="section-kicker">Formation</span>
-            <h2>
-              Un parcours orienté développement logiciel et ouverture
-              internationale.
-            </h2>
-          </div>
-
-          <div class="stacked-cards reveal reveal-delay-1">
-            <article class="mini-card">
-              <h3>Master Expert en Développement Logiciel</h3>
-              <p>Ynov Paris · 2024 — 2025</p>
-              <small>RNCP Niveau 7</small>
-            </article>
-            <article class="mini-card">
-              <h3>Master Informatique — Développement</h3>
-              <p>Ynov Nantes · 2020 — 2024</p>
-            </article>
-            <article class="mini-card">
-              <h3>Informatique Générale & HSK 4</h3>
-              <p>Shanghai Institute of Technology · 2015 — 2019</p>
-              <small>Certification officielle en chinois</small>
-            </article>
-          </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        Je suis actuellement ouvert · e aux opportunité··s de stage et d'alternance. 
+                        N'hé··sitez pas à me contacter pour discuter de vos projets !
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:yasser.seryas@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            yasser.seryas@example.com
+                        </a>
+                        <a href="https://linkedin.com/in/yasserseryas" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/YasserSeryas" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <section class="section alt-section" id="contact">
-        <div class="container contact-grid">
-          <div class="section-heading reveal">
-            <span class="section-kicker">Contact</span>
-            <h2>
-              Un portfolio utile doit se terminer par une prise de contact
-              simple.
-            </h2>
-            <p>
-              Je recherche actuellement une opportunité en CDI ou CDD comme
-              développeur full-stack. Pour une mission, un recrutement ou un
-              échange, voici les meilleurs points d'entrée.
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2024 Yasser Seryas. Développeur · euse Full-Stack.
             </p>
-          </div>
-
-          <div class="contact-card reveal reveal-delay-1">
-            <a href="mailto:yasseryoussoufm@gmail.com"
-              >yasseryoussoufm@gmail.com</a
-            >
-            <a href="tel:+33764512779">07 64 51 27 79</a>
-            <a
-              href="https://www.linkedin.com/in/yasser-youssouf-mohamed-396b1a19a/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >LinkedIn</a
-            >
-            <a
-              href="https://github.com/YasserSeryas"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-            <p class="contact-note">Nantes · mobilité Île-de-France</p>
-
-            <form class="contact-form" aria-label="Formulaire de contact">
-              <label>
-                Nom
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Votre nom"
-                  required
-                />
-              </label>
-              <label>
-                Email
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="votre@email.com"
-                  required
-                />
-              </label>
-              <label>
-                Sujet
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Objet de votre message"
-                  required
-                />
-              </label>
-              <label>
-                Message
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  placeholder="Décrivez votre besoin"
-                  required
-                ></textarea>
-              </label>
-              <button class="btn btn-primary btn-full" type="submit">
-                Envoyer un message
-              </button>
-            </form>
-          </div>
         </div>
-      </section>
-    </main>
-  </body>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script/script.js"></script>
+</body>
 </html>
