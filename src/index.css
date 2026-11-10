@@ -1,0 +1,84 @@
+:root {
+  --primary: #0d6efd;
+  --dark: #0b1120;
+  --light: #f8f9fa;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  background: #fff;
+}
+
+.navbar {
+  background-color: rgba(11, 17, 32, 0.95);
+}
+
+.hero-wrap {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.hero_title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  min-width: 130px;
+  color: #fff;
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.hero-avatar {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.skillsIcon {
+  font-size: 3rem;
+}
+
+.progress {
+  height: 8px;
+}
+
+.experience-card,
+.portfolioContent {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+  background: var(--dark);
+  color: #fff;
+  padding: 30px 0;
+}
+
+@media (max-width: 991px) {
+  .hero_title {
+    font-size: 2.2rem;
+  }
+}
